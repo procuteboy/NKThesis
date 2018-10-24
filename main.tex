@@ -1,0 +1,61 @@
+% !TEX encoding = UTF-8 Unicode
+% !TEX program = xelatex
+% !BIB program = biber
+% !TEX TS-program = xelatex
+% !BIB TS-program = biber
+%%
+%%  本模板方式编译: XeLaTeX + biber
+%%
+%%  注意: 在改变编译方式前应先删除 *.toc 和 *.aux 文件
+%%
+\documentclass[12pt,openright]{book}
+
+% 引入NKThesis包
+\usepackage[emptydoublepage]{NKThesis}   % 中文
+%\usepackage[emptydoublepage,English]{NKThesis} % 英文
+
+% 其它包按需添加
+\usepackage{amsmath}
+\usepackage{cases}
+\usepackage{multirow}
+
+% 参考文献
+\addbibresource{nkthesis.bib}
+% 图片文件夹
+\graphicspath{{image/}}
+
+\includeonly{
+	./tex/abstract,
+	./tex/introduction,
+	./tex/relatedwork,
+	./tex/method,
+	./tex/discussion,
+	./tex/summary,
+	./tex/references,
+	./tex/acknowledgements,
+	./tex/appendices,
+	./tex/resume
+}
+\begin{document}
+%  设置基本信息
+%  注意:  逗号`,'是项目分隔符. 如果某一项的值出现逗号, 应放在花括号内, 如 {,}
+%
+
+
+
+\include{./tex/abstract}
+
+\tableofcontents
+
+\include{./tex/introduction}
+\include{./tex/relatedwork}
+\include{./tex/method}
+\include{./tex/discussion}
+\include{./tex/summary}
+
+\include{./tex/references}
+\include{./tex/acknowledgements}
+\include{./tex/appendices}
+\include{./tex/resume}
+
+\end{document}

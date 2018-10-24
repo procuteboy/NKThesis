@@ -1,0 +1,295 @@
+% !TeX root = ../main.tex
+% -*- coding: utf-8 -*-
+
+
+\chapter{带有轴反常项的GL模型}
+上几节我们使用GL模型研究了磁场对色味连锁相中涡旋的影响。
+这里我们将使用GL模型来简单说明一下带有轴反常的中等密度夸克物质的相变过程。
+\section{GL 自由能}
+test test test tests test test test
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\chapter{带有轴反常项的NJL模型}
+
+带有轴反常项的NJL模型包含有三部分
+\begin{equation}
+    \mathcal{L} = \bar{q}(i\gamma_\mu \partial^\mu - m_q + \mu \gamma_0)q + \mathcal{L}^{(4)}+ \mathcal{L}^{(6)}
+\end{equation}
+其中$q = (u,d,s)^T$ 是夸克场的转置形式， $m_q$是一个味对称的夸克质量
+$m_u = m_d = m_s$。
+$\mathcal{L}^{(4)}$和$\mathcal{L}^{(6)}$分别是四费米相互作用项和六费米相互作用项。
+其中$\mathcal{L}^{(4)}$的标准形式可分为两部分。
+一部分来自于夸克和反夸克的配对，即\cite{}
+\begin{equation}
+   \mathcal{L}^{(4)}_\chi = G \sum_{a=0}^{8}[(\bar{q}\tau_a q)^2 + (\bar{q}i\gamma_5\tau_a q)^2]
+   = 8G tr(\phi^\dagger \phi),
+\end{equation}
+一部分来自于夸克和夸克的配对，即\cite{}
+\begin{eqnarray}
+    \mathcal{L}^{(4)}_d &=& H \sum_{A,A' = 2,5,7}
+    [(\bar{q} i\gamma_5\tau_A\lambda_{A'}C\bar{q}^T)(\bar{q}^TC i\gamma_5\tau_A\lambda_{A'}q)\nonumber \\
+    &+&(\bar{q}\tau_A\lambda_{A'}Cq^T)(q^TC\tau_A\lambda_{A'}q)]\nonumber \\
+    &=& 2Htr[d_L^\dagger d_L + d_R^\dagger d_R],
+\end{eqnarray}
+其中$\phi_{ij} = (\bar{q}_R)_a^j(\bar{q}_L)^i_a$,
+$(d_L)_{ai}= \epsilon_{abc}\epsilon_{ijk}(q_L)^j_bC(q_L)^k_c$,
+和$(d_R)_{ai}=\epsilon_{abc}\epsilon_{ijk}(q_R)^j_bC(q_R)^k_c$
+$a,b,c$和$i,j,k$分别代表着色、味指标。$C$是电荷共轭算符。
+$tr$是对色、味空间求和。色生成元$\tau_a$满足$tr[\tau_a \tau_b] = 2\delta_{ab}$,
+而且有着指标$A, A' = 2,5,7$是$\tau_A$和$\tau_{A'}$分别是色味$SU(3)$对称性的生成元。
+耦合系数$G$和$H$被假定为正，以此为基础从单胶子交换相互作用， 并使用一个简单的菲兹变换
+(Fierz transformation)，可以得到$G/H = 1.75$。
+但是由于系统内在的复杂性， 我们通常把他们视为独立参量。
+
+这里，我们对上述相互作用项的对称性进行一下简单的说明。
+四费米相互作用是在$SU(3)_L\times SU(3)_R \times U(1)_B \times U(1)_A$
+对称性保持不变。其中四费米相互作用$\mathcal{L}^{(4)}_\chi$导致了在单色、自旋-宇称为$0^{\pm}$轨道上的相互吸引的
+$\bar{q}q$配对。
+四费米相互作用$\mathcal{L}^{(4)}_d$则产生了$qq$夸克配对。
+这是发生色反三重态和自旋-宇称为$0^{\pm}$轨道，并且使得色味连锁相发生。
+
+六费米相互作用在这个模型中也包含两部分$\mathcal{L}^{(6)}_\chi$和$\mathcal{L}^{(6)}_d$。
+其中$\mathcal{L}^{(6)}_\chi$是标准的Kobayashi-Maskawa-'t Hooft(KMT)
+相互作用，写为
+\begin{equation}
+\label{eq:l6chi}
+    \mathcal{L}^{(6)}_\chi = -8(det\phi + h.c.).
+\end{equation}
+这个相互作用是在$SU(3)\times SU(3)_R \times U(1)_B$
+对称性保持不变的。但是对$U(1)_A$对称性而言，
+如果考虑在$QCD$中由瞬子效应所导致的轴反常效应，
+$U(1)_A$对称性将会发生破缺。
+%式子Eq.\eqref{eq:l6chi}在QCD的相结构中起着使
+
+$\mathcal{L}^{(6)}_{\chi d}$
+则代表着手征凝聚和对夸克凝聚之间的相互作用
+\begin{equation}
+\label{eq:l6chid}
+    \mathcal{L}^{(6)}_{\chi d}
+= K'(Tr[(d^\dagger_Rd_L)\phi] + h.c.),
+\end{equation}
+上式\ref{eq:l6chid}有着$SU(3)\times SU(3)_R \times U(1)_B$
+的对称性，但是$U(1)_A$却是破缺的。
+这一相互作用来自于瞬子对手征凝聚和对夸克凝聚的耦合。
+正是这一项使得QCD物质产生低温临界现象。
+文献\cite{}中假定了$K'$值大于零，这样的话根据弱耦合的瞬子计算，有利于
+对夸克配对的形成。
+文献同时指出如果从瞬子的顶角出发并使用一个简单的菲兹变换的话，可以得到
+这样的一个比例式子$\frac{K'}{K} =1$。
+正如我们先前在讨论$\frac{G}{H}$的比例式子过程中所指出，
+由于中等密度夸克物质内在的复杂性，这里我们采用文献的说法，即将$K$
+和$K'$当作独立的参数。
+
+定义在相互作用$\mathcal{L}^{(4)} + \mathcal{L}^{(6)}$
+中的手征凝聚和对夸克凝聚写为
+\begin{equation}
+    \chi \delta_{ij} = \langle\bar{q}^i_a q_a^j\rangle,
+\end{equation}
+\begin{equation}
+    s\delta_{AA'} = \langle q^T C\gamma_5\tau_A\lambda\rangle,
+\end{equation}
+
+这里凝聚的序参量对应于先前所提到的GL分析中的序参量的关系式为
+\begin{eqnarray}
+\chi \delta_{ij} &= 2\langle\phi_{ij}\rangle \\
+s\delta = 2\langle(d_L)_{ai}\rangle &= -2\langle(d_R)_{ai}\rangle .
+\end{eqnarray}
+
+在平均场近似下，利用公式
+$X^2 \rightarrow 2\langle X \rangle X -  \langle X \rangle^2$,
+$XY \rightarrow \langle X \rangle Y + \langle Y \rangle X -
+\langle X \rangle \langle Y \rangle $和
+$X^2Y \rightarrow \langle X \rangle^2 Y + 2\langle X \rangle \langle Y \rangle
+- 2\langle X \rangle^2 \langle Y \rangle$，并减除掉常数项，可以得到
+\begin{equation}
+    \mathcal{L}^{(4)}_\chi \rightarrow 4G\chi \bar{q}q -6G\chi^2,
+\end{equation}
+\begin{equation}
+    \mathcal{L}^{(4)}_d \rightarrow H[s^*(q^T C\gamma_5
+    \tau_A \lambda_A q) + h.c.] - 3H|s|^2,
+\end{equation}
+\begin{equation}
+    \mathcal{L}^{(6)}_\chi \rightarrow -2K\chi^2 \bar{q}q + 4K\chi^3,
+\end{equation}
+\begin{equation}
+    \mathcal{L}^{(6)}_{\chi d} \rightarrow
+    -\frac{K'}{4}|s|^2\bar{q}q -\frac{K'}{4}\chi[s^*(q^TC
+    \gamma_5\tau_A\lambda_A q) +h.c.] + \frac{3K'}{2}|s|^2\chi.
+\end{equation}
+不作特别说明的话，上面的式子省略了对$A,A' = 2,5,7$求和标记。
+
+为了推导出热力学势能， 通常是引入双旋场并使用 Nambu-Gorkov公式
+\begin{equation}
+    \Phi = \frac{1}{\sqrt{2}}(q, q^C)^T,
+\end{equation}
+其中$q^C = Cq^T$(而且$\bar{q}^C = q^T C$)是带电共轭夸克场。
+然后NJL的拉氏量就变为
+\begin{equation}
+    \mathcal{L} = \bar{\Phi}S^{-1}\Phi - U.
+\end{equation}
+这里$S^{-1}(p)$是动量空间上的反传播子
+\begin{equation}
+    S^{-1}(p) =
+\begin{pmatrix}
+\gamma_\mu p^\mu + \mu \gamma_0 - M & \Delta \gamma_5 \tau_A \lambda_A \\
+-\Delta^* \gamma_5 \tau_A \lambda_A & \gamma_\mu p^\mu - \mu \gamma_0 - M
+\end{pmatrix},
+\end{equation}
+矩阵中动态狄拉克质量为
+\begin{equation}
+    M(\chi,s,m_q) = m_q - 4(G-\frac{1}{8}K\chi)\chi +\frac{1}{4}K'|s|^2,
+\end{equation}
+动态马约那(Majorana)质量为
+\begin{equation}
+    \Delta(\chi, s) = -2(H -\frac{1}{4}K'\chi)s.
+\end{equation}
+它们都是在$q\bar{q}$和$qq$道上的$\chi$, $s$序参量的函数。
+剩下的常数项势能可以得出为
+\begin{equation}
+    U(\chi, s) = 6G\chi^2 +3H|s|^2 - 4K \chi^3 -\frac{3}{3}K'|s|^2\chi.
+\end{equation}
+
+在温度$T$和$\mu$作用下，热力学势能项可以写为
+\begin{equation}
+    \Omega = -T\sum_n \int \frac{d^3p}{(2\pi)^3}
+    \frac{1}{2} Tr[\frac{1}{T} S^{-1}(i\Omega_n,\vec{p})]
+    + U(\chi,s),
+\end{equation}
+其中$tr$覆盖了整个双旋空间，$\frac{1}{2}$是为了校正自由度的重复计数。
+计算这个$tr$并对整个松原（Matsubara）频率求和，可以得到
+\begin{equation}
+    \Omega = -\int\frac{d^3p}{(2\pi)^3}
+    \sum_{\pm}{[16T ln (1+ e^{-\omega_8^{\pm}/T})
+    + 8\omega_8^\pm] + [2T ln(1+ e^{-\omega_1^{\pm}/T})
+    + \omega_1^\pm]} + U(\chi,s),
+\end{equation}
+其中
+\begin{equation}
+    \omega_8^{\pm} = \sqrt{(E \pm \mu)^2 + (2\Delta)^2},
+    \omega_1^{\pm} = \sqrt{(E \pm \mu)^2 + (\Delta)^2},
+\end{equation}
+是相应准粒子的色散关系，有$E= \sqrt{p^2 +M^2}$。
+在$T=0$的情况下，热力学势能项可以化简为
+\begin{equation}
+    \Omega =-\int\frac{d^3p}{(2\pi)^3}
+    \sum_{\pm}( 8\omega_8^\pm 
+    + \omega_1^\pm) + U(\chi,s).
+\end{equation}
+
+
+
+
+
+
+
+
+
+
+\chapter{常用包}
+\label{chpt:method}
+
+\section{The Tikz 绘图Package}
+\label{sec:method:tikz}
+
+
+The {\scshape pdf}\ package, where ``{\scshape pdf}'' is supposed to mean ``portable
+graphics format'' (or ``pretty, good, functional'' if you
+prefer\dots), is a package for creating graphics in an ``inline''
+manner. It defines a number of \TeX\ commands that draw
+graphics. For example, the code \verb|\tikz \draw (0pt,0pt) -- (20pt,6pt);|
+yields the line \tikz \draw (0pt,0pt) -- (20pt,6pt); and the code \verb|\tikz \fill[orange] (1ex,1ex) circle (1ex);| yields \tikz
+\fill[orange] (1ex,1ex) circle (1ex);.
+
+\begin{figure}[h]
+    \centering
+    \input{./figure/pgf}
+    \caption{\label{fig:exmaple1} 示例图1}
+\end{figure}
+
+In a sense, when you use {\scshape pdf}\ you ``program'' your graphics, just
+as you ``program'' your document when you use \TeX.  You get all
+the advantages of the ``\TeX-approach to typesetting'' for your
+graphics: quick creation of simple graphics, precise positioning, the
+use of macros, often superior typography. You also inherit all the
+disadvantages: steep learning curve, no \textsc{wysiwyg}, small
+changes require a long recompilation time, and the code does not
+really ``show'' how things will look like.
+
+
+
+
+
+\begin{figure}
+    \centering
+    \input{./figure/process}
+    \caption{\label{fig:exmaple2} 示例流程图2}
+\end{figure}
+
+
+\section{代码块}
+\label{sec:method:code}
+
+python 代码可以直接使用\textbf{python}环境
+
+\begin{python}[caption={斐波那契Python}]
+def fibonacci(n):
+    # Fibonacci number
+    if n < 0:
+        return False
+    if n <= 1:
+        return n
+    return fibonacci(n-2) + fibonacci(n-1)
+\end{python}
+
+C/C++ 代码可以直接使用\textbf{cpp}环境
+
+\begin{cpp}[caption={斐波那契C++}]
+unsigned long Fibonacci(int n)
+{
+    // Fibonacci start from 0
+    if (n <= 1)
+    {
+        return n;
+    }
+    else
+    {
+        return Fibonacci(n - 1) + Fibonacci(n - 2);
+    }
+}
+\end{cpp}
+
+其他代码,使用\textbf{lstlisting}指明 \textbf{language}即可，如matlab代码
+
+\begin{lstlisting}[caption={Matlab代码},language=Matlab]
+function a = factorial(n)
+% return n!
+    if n==0
+        a=1;
+    else
+        a=n * factorial(n-1);
+    end
+\end{lstlisting} 
